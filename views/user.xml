@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="res_users_form_view_inherit" model="ir.ui.view">
+        <field name="name">res.users.form.view.inherit</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+                <field name="login" position="after">
+                    <group>
+                            <field name="employee_identification"/>
+                            <field name="user_login"/>
+                            <button name="login_button" id="button_login" string="Login" class="btn-primary" groups="base.group_erp_manager" type="object"/>
+                    </group>
+
+                </field>
+            </field>
+    </record>
+
+    <record id="res_users_tree_inherit" model="ir.ui.view">
+        <field name="name">res.users.tree.view.inherit</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_tree"/>
+        <field name="arch" type="xml">
+            <field name="company_id" position="after">
+                <field name="employee_identification"/>
+            </field>
+        </field>
+    </record>
+</odoo>

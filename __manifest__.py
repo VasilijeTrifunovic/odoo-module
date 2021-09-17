@@ -1,0 +1,17 @@
+{
+    'name' : 'Add new field to user model',
+    'version' : '1.0',
+    'summary': 'Customize user model',
+    'sequence': 10,
+    'description': """""",
+    'category': 'Accounting/Accounting',
+    'website': 'https://www.odoo.com/',
+    'depends' : ["base"],
+    'data': ['views/user.xml'],
+    'demo': [],
+    'qweb': [],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+    'license': 'LGPL-3',
+}
