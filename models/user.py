@@ -1,11 +1,11 @@
-from odoo import api, fields, models, SUPERUSER_ID
+from odoo import fields, models
 
 
 class Users(models.Model):
     _inherit = 'res.users'
 
     employee_identification = fields.Char(string='Employee Identification', required=False)
-    user_login = fields.Char(string='User Login Count', compute='_get_user')
+    user_login = fields.Integer(string='User Login Count', compute='_get_user')
 
     def _get_user(self):
         current_user = self.id

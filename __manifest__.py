@@ -1,9 +1,9 @@
 {
-    'name' : 'Add new field to user model',
+    'name' : 'Ilexius task',
     'version' : '1.0',
     'summary': 'Customize user model',
     'sequence': 10,
-    'description': """""",
+    'description': """Adding new fields to user model(employee id and user login count)""",
     'category': 'Accounting/Accounting',
     'website': 'https://www.odoo.com/',
     'depends' : ["base"],
